@@ -1,0 +1,18 @@
+<template>
+   <div class="slds-m-around_large">
+    <h1>Lets try it out</h1>
+    <lightning-input label="Type here ......" value={Message} onchange={handleClick} required></lightning-input>
+    <p>{greeting}</p>
+    <p>{Message}</p>
+    <p><lightning-button variant="success" label="Click Here" value="ClickMe" onclick={handleSubmit} ></lightning-button></p>
+    <p>
+      <template for:each={result} for:item="con" >
+         <li key={con.Id}>
+            {con.Name}
+            {con.Email}
+
+         </li>
+      </template>
+    </p>
+   </div>
+</template>

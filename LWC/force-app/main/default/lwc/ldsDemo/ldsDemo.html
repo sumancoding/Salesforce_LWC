@@ -1,0 +1,20 @@
+<template>
+    <div class="slds-m-around_small">
+
+<!-- record-id is used to view he records whereas object-api-name is used to create the records-->
+<!--Full/Compact-->
+<!--view, edit, readonly-->
+
+        <lightning-record-form 
+        object-api-name="Account"
+        layout-type="Full"
+        columns="2"
+        mode="edit"
+        onerror={handleError}
+        onsuccess={handleSuccess}
+        onsubmit={handleSubmit}
+        >
+    
+    </lightning-record-form>
+    </div>
+</template>
